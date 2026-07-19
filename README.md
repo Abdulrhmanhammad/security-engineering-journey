@@ -52,7 +52,7 @@ that the course was actually studied.
 | 4 | pwn.college — first overflow | Exploitation | ⚪ Planned | [02-exploitation/01-pwn-college-first-overflow.md](02-exploitation/01-pwn-college-first-overflow.md) |
 | 5 | OST2 RE 1001 + Ghidra | Reverse Engineering | ⚪ Planned | [03-reverse-engineering/01-ghidra-re1001.md](03-reverse-engineering/01-ghidra-re1001.md) |
 | 6 | crackmes.one — easy | Reverse Engineering | ⚪ Planned | [03-reverse-engineering/02-crackmes.md](03-reverse-engineering/02-crackmes.md) |
-| 7.1 | TryHackMe — Jr Penetration Tester | Web / Red Team | ⚪ Planned | [04-web-pentest-red-teaming/01-jr-penetration-tester.md](04-web-pentest-red-teaming/01-jr-penetration-tester.md) |
+| 7.1 | TryHackMe — Jr Penetration Tester | Web / Red Team | 🟡 In Progress | [04-web-pentest-red-teaming/01-jr-penetration-tester.md](04-web-pentest-red-teaming/01-jr-penetration-tester.md) |
 | 7.2 | TryHackMe — Web Application Pentesting | Web / Red Team | ⚪ Planned | [04-web-pentest-red-teaming/02-web-application-pentesting.md](04-web-pentest-red-teaming/02-web-application-pentesting.md) |
 | 7.3 | TryHackMe — Web Application Red Teaming | Web / Red Team | ⚪ Planned | [04-web-pentest-red-teaming/03-web-application-red-teaming.md](04-web-pentest-red-teaming/03-web-application-red-teaming.md) |
 | 7.4 | TryHackMe — Red Teaming | Web / Red Team | ⚪ Planned | [04-web-pentest-red-teaming/04-red-teaming.md](04-web-pentest-red-teaming/04-red-teaming.md) |
