@@ -17,6 +17,23 @@ are the main evidence of hands-on ability.
   [`STATUS-GUIDE.md`](STATUS-GUIDE.md) for the exact snippet.
 - Sections are numbered in the order I work through them, top to bottom.
 
+### Every course file is designed to *prove* the work — not just claim it
+
+Each course/path file follows one consistent structure (documented in
+[`COURSE-TEMPLATE.md`](COURSE-TEMPLATE.md)):
+
+- **At a glance** — provider, format, skills, and a verification link (certificate / profile).
+- **Skills demonstrated** — résumé-ready, so a reviewer sees the capability immediately.
+- **Module / room log** — the core evidence: one entry per module as I complete it,
+  each pairing *what I learned* with a *hands-on artifact* (script, PoC, solved lab,
+  screenshot). Filled in incrementally, so the commit history itself shows the work
+  happening over time — not a checklist backfilled on day one.
+- **Verification** — certificate ID + issuer link once earned, or the committed
+  artifacts that stand in for one.
+
+This is deliberately built so a hiring manager can open any file and see *evidence*
+that the course was actually studied.
+
 ## Legend
 
 | Badge | Meaning |
