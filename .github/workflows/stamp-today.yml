@@ -1,0 +1,48 @@
+name: Stamp @today
+
+# Replaces the token @today with the current date (YYYY-MM-DD) on table rows of
+# Markdown files, then commits the result back. Runs on GitHub's servers, so it
+# works even when you edit files directly in the GitHub web UI (where local git
+# hooks never run).
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - '**/*.md'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: stamp-today
+  cancel-in-progress: false
+
+jobs:
+  stamp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Stamp @today on table rows
+        run: |
+          DATE="$(date +%F)"
+          changed=0
+          while IFS= read -r f; do
+            [ "$(basename "$f")" = "AUTOMATION.md" ] && continue
+            if grep -q '@today' "$f"; then
+              DATE="$DATE" perl -i -pe 's/\@today/$ENV{DATE}/g if /^\s*\|/' "$f"
+              changed=1
+            fi
+          done < <(git ls-files '*.md')
+          echo "changed=$changed" >> "$GITHUB_ENV"
+
+      - name: Commit stamped dates
+        if: env.changed == '1'
+        run: |
+          if ! git diff --quiet; then
+            git config user.name  "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit -am "chore: stamp @today -> $(date +%F) [skip ci]"
+            git push
+          fi
