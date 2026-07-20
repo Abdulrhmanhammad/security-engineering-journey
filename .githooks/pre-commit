@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+#
+# pre-commit hook — auto-stamp the real commit date.
+#
+# Write the token  @today  in any Date cell (or anywhere) when you finish a room.
+# On commit, this hook replaces every  @today  in staged .md files with the current
+# date (YYYY-MM-DD) and re-stages the file — so the date in the table is always the
+# real commit day, never something typed by hand.
+#
+# Enable once per clone:   git config core.hooksPath .githooks
+#
+set -euo pipefail
+
+today="$(date +%F)"
+
+# staged markdown files (added/copied/modified)
+files="$(git diff --cached --name-only --diff-filter=ACM -- '*.md' || true)"
+[ -z "$files" ] && exit 0
+
+while IFS= read -r f; do
+  [ -f "$f" ] || continue
+  if grep -q '@today' "$f"; then
+    today="$today" perl -i -pe 's/\@today/$ENV{today}/g' "$f"
+    git add "$f"
+    echo "pre-commit: stamped @today -> $today in $f"
+  fi
+done <<< "$files"
+
+exit 0
