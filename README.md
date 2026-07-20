@@ -11,10 +11,10 @@ are the main evidence of hands-on ability.
 
 ## Background
 
-I'm a security researcher with **over a year of hands-on offensive security
-experience**, focused on web application security and bug bounty. My real-world
-findings — submitted, triaged, and resolved reports — are documented in
-[`reports/hackerone/`](reports/hackerone/README.md).
+I'm a security researcher focused on web application security and bug bounty,
+**active since 2024**, with my core, in-depth offensive security experience built
+through **2025**. My real-world findings — submitted, triaged, and resolved
+reports — are documented in [`reports/hackerone/`](reports/hackerone/README.md).
 
 I'm **still actively hunting** — but running it in parallel with a larger focus on
 **deepening my foundations and proving my experience through certifications**: the
