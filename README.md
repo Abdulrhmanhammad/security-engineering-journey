@@ -9,6 +9,22 @@ that reflects real progress — not a checklist I filled in on day one. Certific
 CTF write-ups, and full professional pentest reports live in their own sections and
 are the main evidence of hands-on ability.
 
+## Background
+
+I'm a security researcher with **over a year of hands-on offensive security
+experience**, focused on web application security and bug bounty. My real-world
+findings — submitted, triaged, and resolved reports — are documented in
+[`reports/hackerone/`](reports/hackerone/README.md).
+
+I've made a deliberate choice to **step back from active hunting to formalize and
+deepen my foundations**: the low-level skills that separate a good tester from an
+exceptional one (assembly, reverse engineering, binary exploitation) and the
+industry certifications that prove them (OSCP → OSED → OSEE).
+
+So this repository isn't a beginner starting from zero — it's a **practitioner with
+field experience reinforcing it with deep technical grounding and formal
+credentials**. The roadmap below is that focused phase, in the open.
+
 ## How this repo works
 
 - Each topic file starts with a status badge: 🟡 **In Progress**, 🟢 **Completed**, or ⚪ **Planned**.

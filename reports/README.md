@@ -13,7 +13,17 @@ reports/
   <engagement-name>/
     report.md
     evidence/          <- screenshots, PoC scripts (redacted/sanitized)
+  hackerone/           <- real bug bounty reports as screenshots (field evidence)
+    images/
 ```
+
+## Sections
+
+- **[`hackerone/`](hackerone/README.md)** — real HackerOne bug bounty reports
+  (submitted / triaged / resolved), shown as screenshots. The clearest proof of
+  real-world, accepted findings.
+- **Written reports** — full CVSS-scored engagement reports from lab/range
+  targets, using [`TEMPLATE.md`](TEMPLATE.md).
 
 ## Index
 
