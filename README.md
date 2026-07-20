@@ -47,9 +47,6 @@ Each course/path file follows one consistent structure (documented in
 - **Verification** — certificate ID + issuer link once earned, or the committed
   artifacts that stand in for one.
 
-This is deliberately built so a hiring manager can open any file and see *evidence*
-that the course was actually studied.
-
 ## Legend
 
 | Badge | Meaning |
