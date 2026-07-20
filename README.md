@@ -16,14 +16,15 @@ experience**, focused on web application security and bug bounty. My real-world
 findings — submitted, triaged, and resolved reports — are documented in
 [`reports/hackerone/`](reports/hackerone/README.md).
 
-I've made a deliberate choice to **step back from active hunting to formalize and
-deepen my foundations**: the low-level skills that separate a good tester from an
-exceptional one (assembly, reverse engineering, binary exploitation) and the
-industry certifications that prove them (OSCP → OSED → OSEE).
+I'm **still actively hunting** — but running it in parallel with a larger focus on
+**deepening my foundations and proving my experience through certifications**: the
+low-level skills that separate a good tester from an exceptional one (assembly,
+reverse engineering, binary exploitation) and the industry certifications that back
+them (OSCP → OSED → OSEE).
 
 So this repository isn't a beginner starting from zero — it's a **practitioner with
-field experience reinforcing it with deep technical grounding and formal
-credentials**. The roadmap below is that focused phase, in the open.
+active field experience reinforcing it with deep technical grounding and formal
+credentials**. The roadmap below is that work, in the open.
 
 ## How this repo works
 
